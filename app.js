@@ -207,3 +207,14 @@ console.log(`${itCompanies.slice(0,6)} and ${itCompanies[itCompanies.length-1]} 
 
 const result = itCompanies.filter(i => i.includes("o"));
 console.log(result)
+
+let yazi = "kerim";
+
+let yazi_lengt = yazi.length
+let arr = []
+for( let i = yazi_lengt ; i>=0 ; i--){
+    arr.push(yazi[i])
+ 
+    
+}
+console.log(arr.join(""))
