@@ -247,10 +247,87 @@ console.log(fruits)
 // console.log(fruits)
 // console.log(fruits.splice(2, 0, "Lemon", "Kiwi"));
 
-// console.log(fruits)
-// console.log(fruits.splice(0, 2));
-
 console.log(fruits)
-console.log(fruits.slice(2))
-console.log(fruits.toString())
-console.log(fruits);
+console.log(fruits.splice(0, 2));
+console.log(fruits)
+
+// console.log(fruits)
+// console.log(fruits.slice(1,3))
+// // console.log(fruits.toString())
+// console.log(fruits);
+
+// 15.Sort the array using sort() method
+
+
+const itCompanies = []
+
+itCompanies[0]= "Facebook";
+itCompanies[1]= "Google";
+itCompanies.push("Microsoft");
+itCompanies.push("Apple");
+itCompanies.push("IBM");
+itCompanies.push("Oracle");
+itCompanies.push("Amazon");
+
+const number =["32","1","6","7","9","4"]
+
+console.log(itCompanies.sort());
+
+console.log(number.sort())
+
+// 16.Reverse the array using reverse() method
+console.log(itCompanies[0].split("").reverse().concat(fruits));
+
+// 17.Slice out the first 3 companies from the array
+
+console.log(itCompanies);
+
+console.log(itCompanies.slice(3));
+// console.log(itCompanies.splice(3))
+
+console.log(itCompanies);
+
+// 18.Slice out the last 3 companies from the array
+
+console.log(itCompanies.slice(itCompanies.length -3 ,itCompanies.length))
+
+// 19.Slice out the middle IT company or companies from the array
+itCompanies.push("clarusway")
+console.log(itCompanies)
+itCompanies.pop()
+
+console.log(itCompanies[Math.floor(itCompanies.length/2)]);
+
+itCompanies.length % 2 ? itCompanies[Math.floor(itCompanies.length/2)] : itCompanies[itCompanies.length/2]
+
+myFunction = (a)=>{
+    return a.length % 2 ? a[Math.floor(a.length/2)] : a[a.length/2]
+}
+
+console.log(myFunction(number));
+
+
+
+// 20.Remove the first IT company from the array
+console.log(itCompanies.shift())
+console.log(itCompanies);
+
+// 21.Remove the middle IT company or companies from the array
+
+console.log(itCompanies.indexOf(myFunction(itCompanies)))
+console.log(itCompanies)
+console.log(itCompanies.splice(itCompanies.indexOf(myFunction(itCompanies)),1));
+
+console.log(itCompanies)
+
+// if(itCompanies.length%2){
+//     itCompanies[Math.floor(a.length/2)]
+// }else if(ce){
+//     itCompanies[itCompanies.length/2]
+// }
+ 
+
+// else {
+//     console.log(itCompanies.splice(itCompanies.indexOf(myFunction(itCompanies)),2));
+// }
+
