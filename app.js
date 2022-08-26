@@ -331,3 +331,83 @@ console.log(itCompanies)
 //     console.log(itCompanies.splice(itCompanies.indexOf(myFunction(itCompanies)),2));
 // }
 
+const numbers = [23, 5, 16, 7,1000];
+console.log(numbers.sort());
+
+// const points = [40, 100, 1, 5, 25, 10];
+
+// points.sort(function(a, b){
+//     return console.log(a - b);
+// })
+
+// console.log(points.sort())
+
+
+// console.log(points.sort(function(a, b){return a - b}));
+
+// console.log(0.3 - Math.random());
+
+
+const points = [40, 100, 1, 5, 25, 10];
+
+console.log(Math.max.apply(null, points));
+
+console.log(Math.max(...points, ...numbers));
+
+
+// console.log(itCompanies);
+
+// for(let i =0; i<=itCompanies.length ; i++){
+//     itCompanies.pop()
+//     console.log(itCompanies)
+// }
+// console.log(itCompanies)
+
+let i = itCompanies.length;
+console.log(itCompanies);
+
+while(i>0){
+    itCompanies.shift()
+    i--
+    console.log(itCompanies);
+};
+
+
+// Exercise: Level 2
+
+
+// import countries from"./ countries";
+
+
+// console.log(webTechs)
+
+// 2.First remove all the punctuations and change the string to array and count the number of words in the array
+
+let text =
+'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+
+let new_text = text.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"")
+
+
+
+console.log(new_text.split(" ").length)
+
+// 3.In the following shopping cart add, remove, edit items
+const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
+
+// add 'Meat' in the beginning of your shopping cart if it has not been already added
+
+console.log(shoppingCart.unshift("Meat"))
+console.log(shoppingCart);
+
+// add Sugar at the end of you shopping cart if it has not been already added
+
+console.log(shoppingCart.push("Sugar"))
+console.log(shoppingCart);
+
+// remove 'Honey' if you are allergic to honey
+
+console.log(shoppingCart.splice(shoppingCart.indexOf("Honey"),1));
+console.log(shoppingCart)
+shoppingCart[shoppingCart.indexOf("Tea")]= "Green Tea"
+console.log(shoppingCart);
