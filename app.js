@@ -411,3 +411,81 @@ console.log(shoppingCart.splice(shoppingCart.indexOf("Honey"),1));
 console.log(shoppingCart)
 shoppingCart[shoppingCart.indexOf("Tea")]= "Green Tea"
 console.log(shoppingCart);
+
+//! Odev: prompt ile konsoldan bir sayi istenmeli (string veya number
+//! olarak) eger bu girilen sayi, dizi icerisinde bulunuyorsa indisi
+//! (string ve number olarak ayri) yazdirilmalidir. Eger bulunamadiysa
+//! Aranilan bulunamamistir yazidirilmalidir.
+
+// let arr =[2, "2", "3",3,"True", 4, "5", "iki"]
+
+// let x = prompt("bir sayi giriniz")
+// let y= +x ;
+
+
+// let x = prompt("bir sayi giriniz")
+// let y = +x;
+
+// let arr=[25,89,56,"25"];
+
+// console.log();
+// if(arr.includes(x)|| arr.includes(y)){
+//    console.log(arr.indexOf(x), arr.indexOf(y) );
+// }else
+// console.log("bulunamadi")
+
+
+
+
+
+// if(arr.indexOf(`${x}`) >= 0 && arr.indexOf(`${y}`) >=0 ){
+//     console.log(arr.indexOf(`${x}`), arr.indexOf(y) )
+// }
+// else if(arr.indexOf(`${x}`) >=0 ){
+//     console.log(arr.indexOf(x))
+// }
+// else if(arr.indexOf(`${y}`)>=0){
+//     console.log(arr.indexOf(`${y}`))
+// }
+
+// else{
+//     console.log("bulunamadi");
+// }
+
+
+
+// let arr = [-2, 2, "2", "3", 3, "True", 4, "5", "iki"];
+// let x = "-2";
+// let y = +x;
+
+// if (arr.indexOf(x) >= 0 && arr.indexOf(y) >= 0) {
+//   console.log(arr.indexOf(x), arr.indexOf(y));
+// } else if (arr.indexOf(x) >= 0) {
+//   console.log(arr.indexOf(x));
+// } else if (arr.indexOf(y) >=0 ) {
+//   console.log(arr.indexOf(y));
+// } else {
+//   console.log("bulunamadi");
+// }
+
+
+let str1 = "xoxoo".toLowerCase()
+let y = str1.split("")
+console.log(y);
+let x = []
+
+let k =[]
+
+
+for(i=0; i<=y.length ; i++){
+    if(i=="o"){
+        x.push[i];
+    }else if(i=="x"){
+        s.push[i]
+    }
+
+}
+
+console.log(x.length);
+
+console.log(x.length == k.length ? true : false);
