@@ -490,4 +490,15 @@ console.log(x.length);
 
 console.log(x.length == k.length ? true : false);
 
+function oddCount(str) {
+    const sayac = [];
+  
+    for (let i = 1; str > i; i + 2) {
+      sayac.push(i);
+    }
+  
+    return;
+  }
+  console.log(oddCount(16));
+
 
