@@ -531,3 +531,28 @@ setTimeout(() => {
 fetch("https://api.github.com/users").then((res)=>console.log(res.json())).catch((err)=>console.log(err)); 
 
 
+
+ROT 13 CODEWARS Exercices
+let word = "duck";
+let wordSplit = word.split("");
+
+let first = "abcdefghijklm"
+let firstSplit = first.split("");
+
+let second = "nopqrstuvwxyz";
+let secondSplit = second.split("");
+
+let newWord = []
+
+for(let i = 0; i<wordSplit.length ;i++){
+    if(firstSplit.includes(wordSplit[i])){  
+        newWord.push(secondSplit[firstSplit.indexOf(wordSplit[i])])
+    }
+    else if(secondSplit.includes(wordSplit[i])){
+        newWord.push(firstSplit[secondSplit.indexOf(wordSplit[i])])  
+    }      
+}
+
+console.log(newWord.join(""))
+
+
