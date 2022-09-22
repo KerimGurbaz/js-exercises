@@ -502,3 +502,32 @@ function oddCount(str) {
   console.log(oddCount(16));
 
 
+
+// async
+
+setTimeout(()=>{
+    console.log("kerim")
+},3001)
+
+console.log("gurbaz");
+console.log("damla");
+
+setTimeout(() => {
+    console.log("selam")
+}, 3000);
+
+
+// let counter = 3;
+// const sec1 = setInterval(()=>{
+// console.log(counter++)
+// if(counter>10){
+//     clearInterval(sec1);
+// }
+
+// },1000)
+
+
+
+fetch("https://api.github.com/users").then((res)=>console.log(res.json())).catch((err)=>console.log(err)); 
+
+
